@@ -8,12 +8,13 @@ on:
   workflow_dispatch:
   workflow_call:
     inputs:
-      branch:
-        type: string
+      keyboard:
+        description: 'Keyboard to build'
         required: true
       keymap:
-        type: string
+        description: 'Keymap to build'
         required: true
+
       slice_length:
         type: string
         required: true
